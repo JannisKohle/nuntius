@@ -9,7 +9,7 @@ It works pretty much just like twitter:
 - You can write small posts (or tweets)
 - You can include pictures in posts
 - You can like other posts and reply to them
-- Of course, you can also reply to other replies
+- If you want to reply to other replies, you need to use ```@username``` - **no nested replies**
 - You can follow other people
 
 ## The rest api:
@@ -17,14 +17,18 @@ It works pretty much just like twitter:
 ### Endpoints:
 
 - ```/search?s={keyword}```
-
+-------------------
 - ```/posts/recommendations``` <- Recommended posts for you
 - ```/posts/trending``` <- Trending posts
 - ```/posts/following``` <- Posts from people that you're following
+-------------------
 - ```/posts```
 - ```/posts/:postId```
-
+- ```/posts/:postId/replies```
+- ```/posts/:postId/replies/:replyId```
+- ```/posts/:postId/likes```
+-------------------
 - ```/accounts```
 - ```/accounts/:username```
-
+-------------------
 - ```/settings```
