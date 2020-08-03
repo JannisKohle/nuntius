@@ -17,9 +17,9 @@ It works pretty much just like twitter:
 ### Endpoints:
 
 - ```/search?s={keyword}```
-- ```/posts/recommendations```
-- ```/posts/trending```
-- ```/posts/following```
+- ```/posts/recommendations``` <- Recommended posts for you
+- ```/posts/trending``` <- Trending posts
+- ```/posts/following``` <- Posts from people that you're following
 - ```/posts```
 - ```/posts/:postId```
 - ```/accounts```
