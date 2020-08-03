@@ -26,6 +26,7 @@ It works pretty much just like twitter:
 - ```/posts/:postId```
 - ```/posts/:postId/replies```
 - ```/posts/:postId/replies/:replyId```
+- ```/posts/:postId/replies/:replyId/likes```
 - ```/posts/:postId/likes```
 -------------------
 - ```/accounts```
