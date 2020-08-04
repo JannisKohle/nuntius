@@ -3,6 +3,7 @@ const app = express();
 
 const accountsRouter = require("./routes/accounts");
 const postsRouter = require("./routes/posts");
+const postListsRouter = require("./routes/postLists");
 const searchRouter = require("./routes/search");
 const settingsRouter = require("./routes/settings");
 
