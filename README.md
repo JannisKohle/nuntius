@@ -34,7 +34,17 @@ It works pretty much just like twitter:
 -------------------
 - ```/settings```
 
-## How stuff is stored in the DB:
+## How stuff is stored:
+
+The DB has 3 collections: ```posts```, ```accounts``` and ```replies```
+
+Whenever you're referencing another user, you use their username. The username
+cannot contain spaces and nobody can change it later. The real name, which is also
+displayed on the person's profile, can contain spaces and can be changed because
+it is never used to link to someone's profile (with a ```@``` or in an url).
+
+Whenever you're referencing a post, you use the post's Id.
+Whenever you're referencing a reply, you use the reply's Id.
 
 ### Accounts:
 
@@ -46,8 +56,33 @@ It works pretty much just like twitter:
     "followers": ["elonmusk", "darthvader"],
     "following": ["randomuser", "elonmusk", "darthvader"],
     "likedPosts": ["78q34tnd5q394", "4t895ft4653q8", "q847n5ftgq483z5f"],
-    "likedReplies": ["q847n5ftgq483z5f/n8tq34986qv054"],
+    "likedReplies": ["n8tq34986qv054"],
     "posts": ["q9347bvq348v0", "8q0374fz5qer8t"],
-    "replies": ["84730qtng3q4nt6/q497zfnqt80gd2", "8q043zfqt89q084tg/084q3tgq34tgcn9", "4q893gn83gqtc8/9ng238zt3489qtv03q"]
+    "replies": ["q497zfnqt80gd2", "084q3tgq34tgcn9", "9ng238zt3489qtv03q"]
+}
+```
+
+### Posts:
+
+```json
+{
+    "id": "q8n3074nt56gqv353nz3576vg",
+    "text": "Who is dream?",
+    "writer": "realbenex",
+    "image": "images.nuntius.yzx/34078z57834bv5g.jpg",
+    "likes": ["illumina1337", "nicetwice", "dreamwasnottaken", "goergeisfound"],
+    "replies": ["9ch37gh853vft68", "8743qt0zfnq6vq03"]
+}
+```
+
+### Replies:
+
+```json
+{
+    "id": "8743qt0zfnq6vq03",
+    "text": "that's a funny one",
+    "writer": "dreamwasnottaken",
+    "likes": ["illumina1337", "goergeisfound"],
+    "replies": ["83qzgntv0gq3tvnqz"]
 }
 ```
