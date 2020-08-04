@@ -13,6 +13,8 @@ router.delete('/', (req, res) => {
     res.send("Delete account");
 });
 
+///////////////////
+
 router.get('/:username', (req, res) => {
     res.send("Get info about this account");
 });

@@ -13,6 +13,8 @@ router.delete('/', (req, res) => {
     res.send("Delete post");
 });
 
+///////////////////
+
 router.get("/:postId", (req, res) => {
     res.send("Get info about post");
 });
@@ -22,6 +24,8 @@ router.put("/:postId", (req, res) => {
 router.patch("/:postId", (req, res) => {
     res.send("Edit post");
 });
+
+///////////////////
 
 router.get("/:postId/replies", (req, res) => {
     res.send("Get all replies");
@@ -33,6 +37,8 @@ router.delete("/:postId/replies", (req, res) => {
     res.send("Delete a reply");
 });
 
+///////////////////
+
 router.get("/:postId/replies/:replyId", (req, res) => {
     res.send("Get ifno about reply");
 });
@@ -43,6 +49,8 @@ router.patch("/:postId/replies/:replyId", (req, res) => {
     res.send("Update reply");
 });
 
+///////////////////
+
 router.get("/:postId/replies/:replyId/likes", (req, res) => {
     res.send("Get all likes of reply");
 });
@@ -52,6 +60,8 @@ router.post("/:postId/replies/:replyId/likes", (req, res) => {
 router.delete("/:postId/replies/:replyId/likes", (req, res) => {
     res.send("Unlike this reply");
 });
+
+///////////////////
 
 router.get("/:postId/likes", (req, res) => {
     res.send("Get all likes");
