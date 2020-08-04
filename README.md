@@ -82,7 +82,6 @@ Whenever you're referencing a reply, you use the reply's Id.
     "id": "8743qt0zfnq6vq03",
     "text": "that's a funny one",
     "writer": "dreamwasnottaken",
-    "likes": ["illumina1337", "goergeisfound"],
-    "replies": ["83qzgntv0gq3tvnqz"]
+    "likes": ["illumina1337", "goergeisfound"]
 }
 ```
