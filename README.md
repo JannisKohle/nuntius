@@ -33,3 +33,21 @@ It works pretty much just like twitter:
 - ```/accounts/:username```
 -------------------
 - ```/settings```
+
+## How stuff is stored in the DB:
+
+### Accounts:
+
+```json
+{
+    "username": "0rbite",
+    "realname": "Jannis Kohle",
+    "picture": "images.nuntius.yzx/ne746fh3856.jpg",
+    "followers": ["elonmusk", "darthvader"],
+    "following": ["randomuser", "elonmusk", "darthvader"],
+    "likedPosts": ["78q34tnd5q394", "4t895ft4653q8", "q847n5ftgq483z5f"],
+    "likedReplies": ["q847n5ftgq483z5f/n8tq34986qv054"],
+    "posts": ["q9347bvq348v0", "8q0374fz5qer8t"],
+    "replies": ["84730qtng3q4nt6/q497zfnqt80gd2", "8q043zfqt89q084tg/084q3tgq34tgcn9", "4q893gn83gqtc8/9ng238zt3489qtv03q"]
+}
+```
