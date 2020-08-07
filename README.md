@@ -53,12 +53,22 @@ Whenever you're referencing a reply, you use the reply's Id.
     "username": "0rbite",
     "realname": "Jannis Kohle",
     "picture": "images.nuntius.yzx/ne746fh3856.jpg",
+    "email": "0rbite@0rbite.0rbite",
     "followers": ["elonmusk", "darthvader"],
     "following": ["randomuser", "elonmusk", "darthvader"],
     "likedPosts": ["78q34tnd5q394", "4t895ft4653q8", "q847n5ftgq483z5f"],
     "likedReplies": ["n8tq34986qv054"],
     "posts": ["q9347bvq348v0", "8q0374fz5qer8t"],
-    "replies": ["q497zfnqt80gd2", "084q3tgq34tgcn9", "9ng238zt3489qtv03q"]
+    "replies": ["q497zfnqt80gd2", "084q3tgq34tgcn9", "9ng238zt3489qtv03q"],
+    "userSettings": {
+        "theme": "dark",
+        "notifications": {
+            "mentioned": "email",
+            "replies": "email",
+            "postLikes": null,
+            "replyLikes": null
+        }
+    }
 }
 ```
 
