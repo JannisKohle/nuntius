@@ -76,7 +76,7 @@ Whenever you're referencing a reply, you use the reply's Id.
 
 ```json
 {
-    "id": "q8n3074nt56gqv353nz3576vg",
+    "_id": "q8n3074nt56gqv353nz3576vg",
     "text": "Who is dream?",
     "writer": "realbenex",
     "image": "images.nuntius.yzx/34078z57834bv5g.jpg",
@@ -89,7 +89,7 @@ Whenever you're referencing a reply, you use the reply's Id.
 
 ```json
 {
-    "id": "8743qt0zfnq6vq03",
+    "_id": "8743qt0zfnq6vq03",
     "text": "that's a funny one",
     "writer": "dreamwasnottaken",
     "likes": ["illumina1337", "goergeisfound"]
