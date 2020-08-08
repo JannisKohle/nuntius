@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const AccountSchema = mongoose.Schema({
-    "text": {},
-    "writer": {},
-    "likes": {}
+    "text": {type: String, required: true},
+    "writer": mongoose.ObjectId,
+    "likes": {type: Array, default: []}
 });
 
 module.exports = mongoose.model("Account", AccountSchema);
