@@ -60,7 +60,7 @@ Whenever you're referencing a reply, you use the reply's Id.
     "likedReplies": ["n8tq34986qv054"],
     "posts": ["q9347bvq348v0", "8q0374fz5qer8t"],
     "replies": ["q497zfnqt80gd2", "084q3tgq34tgcn9", "9ng238zt3489qtv03q"],
-    "date": "..."
+    "date": "...",
     "userSettings": {
         "theme": "dark",
         "notificationType": "email",
