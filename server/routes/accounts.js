@@ -1,10 +1,16 @@
 const express = require('express');
+const {parse, stringify} = require('flatted');
 const router = express.Router();
+
+const Account = require("../models/Account");
 
 router.use(express.json());
 
 router.get('/', (req, res) => {
-    res.send('Get a list of all accounts');
+    // Get a list of all accounts
+
+    const posts = Account.find({});
+    res.send(stringify(posts));
 });
 router.post('/', (req, res) => {
     res.send("Create a new account");

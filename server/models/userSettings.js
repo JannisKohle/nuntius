@@ -6,4 +6,4 @@ const settingsSchema = mongoose.Schema({
     "notifications": {type: Array, default: ["replies", "mentioned"]}
 });
 
-module.exports = mongoose.model("userSettings", settingsSchema);
+module.exports = settingsSchema;
