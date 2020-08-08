@@ -60,6 +60,7 @@ Whenever you're referencing a reply, you use the reply's Id.
     "likedReplies": ["n8tq34986qv054"],
     "posts": ["q9347bvq348v0", "8q0374fz5qer8t"],
     "replies": ["q497zfnqt80gd2", "084q3tgq34tgcn9", "9ng238zt3489qtv03q"],
+    "date": "..."
     "userSettings": {
         "theme": "dark",
         "notificationType": "email",
@@ -77,7 +78,8 @@ Whenever you're referencing a reply, you use the reply's Id.
     "writer": "realbenex",
     "image": "images.nuntius.yzx/34078z57834bv5g.jpg",
     "likes": ["illumina1337", "nicetwice", "dreamwasnottaken", "goergeisfound"],
-    "replies": ["9ch37gh853vft68", "8743qt0zfnq6vq03"]
+    "replies": ["9ch37gh853vft68", "8743qt0zfnq6vq03"],
+    "date": "..."
 }
 ```
 
@@ -88,6 +90,7 @@ Whenever you're referencing a reply, you use the reply's Id.
     "_id": "8743qt0zfnq6vq03",
     "text": "that's a funny one",
     "writer": "dreamwasnottaken",
-    "likes": ["illumina1337", "goergeisfound"]
+    "likes": ["illumina1337", "goergeisfound"],
+    "date": "..."
 }
 ```
