@@ -16,4 +16,4 @@ const AccountSchema = mongoose.Schema({
     "userSettings": userSettings
 });
 
-module.exports = mongoose.model("Account", AccountSchema);
+module.exports = mongoose.model("Account", AccountSchema, "accounts");

@@ -6,4 +6,4 @@ const ReplySchema = mongoose.Schema({
     "likes": {type: Array, default: []}
 });
 
-module.exports = mongoose.model("Reply", AccountSchema);
+module.exports = mongoose.model("Reply", AccountSchema, "replies");

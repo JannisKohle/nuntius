@@ -8,4 +8,4 @@ const PostSchema = mongoose.Schema({
     "replies": {type: Array, default: []}
 });
 
-module.exports = mongoose.model("Post", PostSchema);
+module.exports = mongoose.model("Post", PostSchema, "posts");
