@@ -36,7 +36,7 @@ It works pretty much just like twitter:
 
 ## How stuff is stored:
 
-The DB has 3 collections: ```posts```, ```accounts```, ```replies```
+The DB has 3 collections: ```posts```, ```accounts``` and ```replies``` and 4 Schemas / Models: ```Account```, ```Post```, ```Reply``` and ```userSettings``` which is a Subschema of ```Account```.
 
 Whenever you're referencing another user, you use their username. The username
 cannot contain spaces and nobody can change it later. The real name, which is also
