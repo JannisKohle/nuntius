@@ -62,12 +62,8 @@ Whenever you're referencing a reply, you use the reply's Id.
     "replies": ["q497zfnqt80gd2", "084q3tgq34tgcn9", "9ng238zt3489qtv03q"],
     "userSettings": {
         "theme": "dark",
-        "notifications": {
-            "mentioned": "email",
-            "replies": "email",
-            "postLikes": null,
-            "replyLikes": null
-        }
+        "notificationType": "email",
+        "notifications": ["mentioned", "replies", "..."]
     }
 }
 ```
