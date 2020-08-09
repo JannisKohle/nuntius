@@ -55,6 +55,12 @@ Whenever you're referencing a reply, you use the reply's Id.
     "picture": "images.nuntius.yzx/ne746fh3856.jpg",
     "email": "0rbite@0rbite.0rbite",
     "password": "iDontUseArchBtw",
+    "followersNum": 2,
+    "followingNum": 3,
+    "likedPostsNum": 3,
+    "likedRepliesNum": 1,
+    "postsNum": 2,
+    "repliesNum": 3,
     "followers": ["elonmusk", "darthvader"],
     "following": ["randomuser", "elonmusk", "darthvader"],
     "likedPosts": ["78q34tnd5q394", "4t895ft4653q8", "q847n5ftgq483z5f"],
@@ -78,6 +84,8 @@ Whenever you're referencing a reply, you use the reply's Id.
     "text": "Who is dream?",
     "writer": "realbenex",
     "image": "images.nuntius.yzx/34078z57834bv5g.jpg",
+    "likesNum": 4,
+    "repliesNum": 2,
     "likes": ["illumina1337", "nicetwice", "dreamwasnottaken", "goergeisfound"],
     "replies": ["9ch37gh853vft68", "8743qt0zfnq6vq03"],
     "date": "..."
@@ -91,6 +99,7 @@ Whenever you're referencing a reply, you use the reply's Id.
     "_id": "8743qt0zfnq6vq03",
     "text": "that's a funny one",
     "writer": "dreamwasnottaken",
+    "likesNum": 2,
     "likes": ["illumina1337", "goergeisfound"],
     "date": "..."
 }
