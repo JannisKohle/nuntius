@@ -16,8 +16,8 @@ app.use("/postLists", postListsRouter);
 app.use("/search", searchRouter);
 app.use("/settings", settingsRouter);
 
-mongoose.connect("mongodb://localhost/nuntiusDB", { useNewUrlParser: true, useUnifiedTopology: true }, () => {
-    console.log("Connected to database");
-});
+mongoose.connect("mongodb://localhost/nuntiusDB", { useNewUrlParser: true, useUnifiedTopology: true })
+.then(() => console.log("Connected to Mongodb"))
+.catch(err => console.log(err))
 
 app.listen(3000, () => console.log("Listening on port 3000"));
