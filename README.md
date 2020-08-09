@@ -54,6 +54,7 @@ Whenever you're referencing a reply, you use the reply's Id.
     "realname": "Jannis Kohle",
     "picture": "images.nuntius.yzx/ne746fh3856.jpg",
     "email": "0rbite@0rbite.0rbite",
+    "password": "iDontUseArchBtw",
     "followers": ["elonmusk", "darthvader"],
     "following": ["randomuser", "elonmusk", "darthvader"],
     "likedPosts": ["78q34tnd5q394", "4t895ft4653q8", "q847n5ftgq483z5f"],

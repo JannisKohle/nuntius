@@ -7,6 +7,7 @@ const AccountSchema = mongoose.Schema({
     "realname": {type: String, required: true},
     "picture": {type: String, default: "images.nuntius.yzx/839tngq39qu.png"},
     "email": {type: String, required: false},
+    "password": {type: String, required: true},
     "followers": {type: Array, default: []},
     "following": {type: Array, default: []},
     "likedPosts": {type: Array, default: []},
