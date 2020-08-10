@@ -31,6 +31,12 @@ async function getAccounts() {
     return accounts;
 }
 
+async function getAllUsernames() {
+    const accounts = await Account.find().select("username").exec();
+
+    return accounts;
+}
+
 async function createAccount(username, realname, picture, email, password) {
     const account = new Account({
         "username": username,
