@@ -9,13 +9,13 @@ router.use(express.json());
 router.get('/', (req, res) => {
     // Get a list of all accounts
 
-    res.send(stringify(getAccounts()));
+    getAccounts().then((data) => res.send(data));
 });
 
 router.post('/', (req, res) => {
     // Create a new account
 
-    res.send(stringify(createAccount(req.body.username, req.body.realname, req.body.picture, req.body.email, req.body.password)))
+    createAccount(req.body.username, req.body.realname, req.body.picture, req.body.email, req.body.password).then((data) => res.send(data));
 });
 
 router.delete('/', (req, res) => {

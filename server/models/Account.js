@@ -26,11 +26,10 @@ const AccountSchema = mongoose.Schema({
 const Account = mongoose.model("Account", AccountSchema, "accounts");
 
 async function getAccounts() {
-    const accounts = await Account.find({})
+    const accounts = await Account.find().exec();
     //.select("-email -password");
 
     return accounts;
-    console.log(accounts);
 }
 
 async function createAccount(username, realname, picture, email, password) {
@@ -43,7 +42,6 @@ async function createAccount(username, realname, picture, email, password) {
     });
 
     const result = await account.save();
-    console.log(result);
     return result;
 }
 
