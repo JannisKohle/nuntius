@@ -2,20 +2,26 @@ const express = require('express');
 const {parse, stringify} = require('flatted');
 const router = express.Router();
 
-const {Account, getAccounts, createAccount} = require("../models/Account");
+const { Account, getAccounts, createAccount } = require("../models/Account");
 
 router.use(express.json());
 
 router.get('/', (req, res) => {
     // Get a list of all accounts
 
-    getAccounts().then((data) => res.send(data));
+    getAccounts().then((data) => res.status(200).send(data));
 });
 
 router.post('/', (req, res) => {
     // Create a new account
 
-    createAccount(req.body.username, req.body.realname, req.body.picture, req.body.email, req.body.password).then((data) => res.send(data));
+    createAccount(req.body.username, req.body.realname, req.body.picture, req.body.email, req.body.password).then((response) => {
+        if (response === "error") {
+            res.status(400).send({"message": "username already exists"});
+        } else {
+            res.status(201).send(response);
+        }
+    });
 });
 
 router.delete('/', (req, res) => {

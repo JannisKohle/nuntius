@@ -32,22 +32,34 @@ async function getAccounts() {
 }
 
 async function getAllUsernames() {
-    const accounts = await Account.find().select("username").exec();
+    const usernames = await Account.find().select("username").exec();
 
-    return accounts;
+    const result = [];
+
+    usernames.forEach((obj, index) => {
+        result.push(obj.username);
+    });
+
+    return result;
 }
 
 async function createAccount(username, realname, picture, email, password) {
-    const account = new Account({
-        "username": username,
-        "realname": realname,
-        "picture": picture,
-        "email": email,
-        "password": password
-    });
+    allUsernames = await getAllUsernames();
 
-    const result = await account.save();
-    return result;
+    if (allUsernames.indexOf(username) === -1) {
+        const account = new Account({
+            "username": username,
+            "realname": realname,
+            "picture": picture,
+            "email": email,
+            "password": password
+        });
+
+        const result = await account.save();
+        return result;
+    } else {
+        return "error"
+    }
 }
 
 module.exports = { Account, getAccounts, createAccount }
