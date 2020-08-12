@@ -1,10 +1,10 @@
 const express = require('express');
 const {parse, stringify} = require('flatted');
 const router = express.Router();
-
 const { Account, getAccounts, createAccount } = require("../models/Account");
 
 router.use(express.json());
+
 
 router.get('/', (req, res) => {
     // Get a list of all accounts
