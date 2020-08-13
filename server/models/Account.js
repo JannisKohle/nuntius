@@ -62,4 +62,10 @@ async function createAccount(username, realname, picture, email, password) {
     }
 }
 
-module.exports = { Account, getAccounts, createAccount }
+async function deleteAccount(username) {
+    const account = await Account.deleteOne({ "username": username }, (err) => {});
+
+    return account;
+}
+
+module.exports = { Account, getAccounts, createAccount, deleteAccount }

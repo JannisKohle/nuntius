@@ -1,7 +1,7 @@
 const express = require('express');
 const {parse, stringify} = require('flatted');
 const router = express.Router();
-const { Account, getAccounts, createAccount } = require("../models/Account");
+const { Account, getAccounts, createAccount, deleteAccount } = require("../models/Account");
 
 router.use(express.json());
 
@@ -25,7 +25,9 @@ router.post('/', (req, res) => {
 });
 
 router.delete('/', (req, res) => {
-    res.send("Delete account");
+    // Delete account
+
+    deleteAccount(req.body.username).then((data) => res.status(200).send(data));
 });
 
 ///////////////////
