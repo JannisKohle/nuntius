@@ -16,7 +16,7 @@ It works pretty much just like twitter:
 
 ### Endpoints:
 
-- ```/search?s={keyword}```
+- ```/search?q=yxz```
 -------------------
 - ```/postLists/recommendations``` <- Recommended posts for you
 - ```/postLists/trending``` <- Trending posts
